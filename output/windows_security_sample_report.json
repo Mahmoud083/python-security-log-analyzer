@@ -1,0 +1,47 @@
+{
+  "input_file": "sample_logs/windows_security_sample.log",
+  "generated_at": "2026-02-08 02:20:03.022534",
+  "summary": {
+    "total_events_parsed": 6,
+    "failed_logins": 5,
+    "successful_logins": 1,
+    "top_usernames_seen": [
+      [
+        "Administrator",
+        3
+      ],
+      [
+        "Guest",
+        2
+      ],
+      [
+        "Mahmoud",
+        1
+      ]
+    ]
+  },
+  "top_talkers": [
+    [
+      "203.0.113.10",
+      3
+    ],
+    [
+      "192.0.2.50",
+      2
+    ],
+    [
+      "198.51.100.22",
+      1
+    ]
+  ],
+  "alerts": [
+    {
+      "type": "bruteforce_suspected",
+      "ip": "203.0.113.10",
+      "failures_in_window": 3,
+      "window_minutes": 5,
+      "first_seen": "2026-01-10 12:10:01",
+      "last_seen": "2026-01-10 12:10:15"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "input_file": "sample_logs/auth.log",
+  "generated_at": "2026-02-08 02:15:43.256251",
+  "summary": {
+    "total_events_parsed": 10,
+    "failed_logins": 8,
+    "successful_logins": 2,
+    "top_usernames_seen": [
+      [
+        "mahmoud",
+        2
+      ]
+    ]
+  },
+  "top_talkers": [
+    [
+      "203.0.113.10",
+      5
+    ],
+    [
+      "192.0.2.50",
+      3
+    ],
+    [
+      "198.51.100.22",
+      2
+    ]
+  ],
+  "alerts": [
+    {
+      "type": "bruteforce_suspected",
+      "ip": "203.0.113.10",
+      "failures_in_window": 5,
+      "window_minutes": 5,
+      "first_seen": "2026-01-10 12:01:10",
+      "last_seen": "2026-01-10 12:01:21"
+    }
+  ]
+}
