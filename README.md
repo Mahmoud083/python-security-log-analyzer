@@ -10,6 +10,17 @@ Designed as a portfolio project for SOC / security analyst roles.
 - Python automation + report generation
 - Clear documentation (SOC-style reporting)
 
+## Alerting & Detection Logic
+
+- Detects repeated failed authentication attempts using a sliding time window
+- Classifies alerts by severity (Low / Medium / High)
+- Maps detected activity to MITRE ATT&CK:
+  - **T1110 – Brute Force**
+  - Tactic: Credential Access
+
+This simulates real SOC alert triage and prioritization workflows.
+
+
 ## Supported Log Formats
 - **Linux SSH auth logs** (Failed/Accepted password patterns)
 - **Windows Security (mock)** events:
